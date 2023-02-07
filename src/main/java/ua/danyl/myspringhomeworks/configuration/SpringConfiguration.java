@@ -24,7 +24,7 @@ public class SpringConfiguration {
     @Bean
     @Scope("prototype")
     public User getUser(){
-        return new User(1,"Sasha",12);
+        return new User(0, "Johni", 34,"Johni@mail","1212123121");
     }
     @Bean
     public String getInfoOfConnection(){

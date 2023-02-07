@@ -16,9 +16,9 @@ public class SpringProjectApplication {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(SpringProjectApplication.class, args);
-        UserController userController = context.getBean(UserController.class);
-        List<User> all = userController.getAll();
-        all.forEach(System.out::println);
+//        UserController userController = context.getBean(UserController.class);
+//        List<User> all = userController.getAll();
+//        all.forEach(System.out::println);
 //        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfiguration.class);
 //        String pathBean = context.getBean("pathBean", String.class);
 //        System.out.println("Hello World");
