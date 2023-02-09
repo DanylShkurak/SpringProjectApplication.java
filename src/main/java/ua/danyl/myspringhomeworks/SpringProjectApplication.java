@@ -15,7 +15,7 @@ import java.util.List;
 public class SpringProjectApplication {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext context = SpringApplication.run(SpringProjectApplication.class, args);
+        SpringApplication.run(SpringProjectApplication.class, args);
 //        UserController userController = context.getBean(UserController.class);
 //        List<User> all = userController.getAll();
 //        all.forEach(System.out::println);

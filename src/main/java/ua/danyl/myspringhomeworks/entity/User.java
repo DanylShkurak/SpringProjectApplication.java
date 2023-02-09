@@ -1,5 +1,6 @@
 package ua.danyl.myspringhomeworks.entity;
 
+import jakarta.persistence.*;
 import lombok.*;
 
 @Getter
@@ -7,8 +8,12 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Entity
+@Table(name = "users")
 public class User {
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     private String name;
     private int age;
     private String email;
